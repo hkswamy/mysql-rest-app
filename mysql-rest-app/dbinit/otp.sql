@@ -1,0 +1,10 @@
+CREATE TABLE otprecord (
+    id BIGINT NOT NULL UNIQUE,
+    first_name VARCHAR(255) NOT NULL,
+    last_name  VARCHAR(255) DEFAULT NULL,
+    email      VARCHAR(255) NOT NULL,
+    phone      VARCHAR(255) NOT NULL,
+    CONSTRAINT UQ_OTP_Email UNIQUE(email)
+);
+
+--INSERT INTO [dbo].[otprecord] VALUES (1001,'KUMARASWAMI','HOSURU','KUMAR@GMAIL.COM','9059410215');
